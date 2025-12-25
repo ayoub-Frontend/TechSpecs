@@ -1,0 +1,179 @@
+/* Start Variables */
+*:root {
+    --main-color: #03A9F4;
+}
+/* End Variables */
+
+/* Start Box */
+.d-flex {
+    display: flex;
+}
+.d-grid {
+    display: grid;
+}
+.flex-1 {
+    flex: 1;
+}
+.align-center {
+    align-items: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.flex-column {
+    flex-direction: column;
+}
+.gap-20 {
+    gap: 20px;
+}
+.gap-25 {
+    gap: 25px;
+}
+.gap-30 {
+    gap: 30px;
+}
+.gap-35 {
+    gap: 35px;
+}
+/* End Box */
+
+/* Start Colors */
+.c-black {
+    color: black;
+}
+.c-white {
+    color: white;;
+}
+.c-blue {
+    color: var(--main-color);
+}
+/* End Colors */
+
+/* Start Positions */
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
+.txt-center {
+    text-align: center;
+}
+/* End Positions */
+
+/* Start Font Sizes */
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fs-40 {
+    font-size: 40px;
+}
+.fs-90 {
+    font-size: 90px;
+}
+.w-full {
+    width: 100%;
+}
+.line-ht-1-5 {
+    line-height: 1.5;
+}
+.fw-500 {
+    font-weight: 500;
+}
+/* End Font Sizes */
+
+/* Start Transforms And Transitions */
+.trans-3s {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.top-half {
+    top: 50%;
+}
+.transY-half {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+/* End Transforms And Transitions */
+
+/* Start Borders */
+.border {
+    border: 1px solid;
+}
+.rad-6 {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.rad-10 {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.rad-half {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.rad-40 {
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+/* End Borders */
+
+/* Start Margin And Padding */
+.m-0 {
+    margin: 0;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mt-35 {
+    margin-top: 35px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.p-15 {
+    padding: 15px;
+}
+.p-25 {
+    padding: 25px;
+}
+.pl-25 {
+    padding-left: 25px;
+}
+/* End Margin And Padding */
