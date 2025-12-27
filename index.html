@@ -13,7 +13,7 @@
         <!-- Main CSS File -->
         <link rel="stylesheet" href="css/master.css">
     </head>
-    <body>
+    <body class="dark">
         <!-- Start Header -->
         <div class="header">
             <div class="container">
@@ -25,21 +25,21 @@
                         </div>
                         <div>
                             <input id="darkmode-toggle" class="toggle-checkbox" type="checkbox">
-                            <label class="toggle-switch trans-3s" for="darkmode-toggle">
-                                <img class="sun" src="images/sun.svg" alt="">
-                                <img class="moon" src="images/moon.svg" alt="">
+                            <label class="toggle-switch trans-3s p-relative d-block bg-white rad-16" for="darkmode-toggle">
+                                <img class="sun top-half transY-half p-absolute rad-half" src="images/sun.svg" alt="">
+                                <img class="moon top-half transY-half p-absolute rad-half" src="images/moon.svg" alt="">
                             </label>
                         </div>
                     </div>
                     <div class="right">
                         <i class="fa-solid fa-bars"></i>
                         <ul class="d-flex gap-30">
-                            <li><a class="fs-14 c-black trans-3s" href="#">API</a></li>
-                            <li><a class="fs-14 c-black trans-3s" href="#">Pricing</a></li>
-                            <li><a class="fs-14 c-black trans-3s" href="#">Documentation</a></li>
-                            <li><a class="fs-14 c-black trans-3s" href="#">Contact US</a></li>
-                            <li><a class="fs-14" href="#">Get Started</a></li>
-                            <li><a class="fs-14 c-black trans-3s" href="#">EN</a></li>
+                            <li><a class="fs-14 c-black trans-3s " href="#">API</a></li>
+                            <li><a class="fs-14 c-black trans-3s " href="#">Pricing</a></li>
+                            <li><a class="fs-14 c-black trans-3s " href="#">Documentation</a></li>
+                            <li><a class="fs-14 c-black trans-3s " href="#">Contact US</a></li>
+                            <li><a class="fs-14 c-white" href="#">Get Started</a></li>
+                            <li><a class="fs-14 c-black trans-3s " href="#">EN</a></li>
                         </ul>
                     </div>
                 </div>
@@ -56,10 +56,183 @@
                         TechSpecs API provides the easiest way to get the standardized technical specifications of over 240,000 consumer 
                         electronics products including the latest laptops, smartphones, tablets, desktops, monitors, smart tvs and smartwatches.
                     </p>
-                    <button class="fs-14">Get your API key today</button>
+                    <button class="fs-14 c-white">Get your API key today</button>
                 </div>
             </div>
         </div>
         <!-- End Landing -->
+
+        <!-- Start product Section -->
+        <div class="product-section p-relative">
+            <div class="container">
+                <div class="product-info">
+                    <div class="top" style="overflow-x: auto;">
+                        <ul class="d-flex align-center" style="width: max-content;">
+                            <li class="not bg-white fs-14">Product Lookup</li>
+                            <li class="bg-grey fs-14 trans-3s">IMEI Lookup</li>
+                            <li class="bg-grey fs-14 trans-3s">Product Images</li>
+                            <li class="bg-grey fs-14 trans-3s">Product Images</li>
+                            <li class="bg-grey fs-14 trans-3s">Product Images</li>
+                            <li class="bg-grey fs-14 trans-3s">Product Images</li>
+                            <li class="not fs-14"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            <li class="not fs-14 c-blue">Copy to clipboard</li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            <pre style="background: white; color: #5C6D76; padding:16px; font-size:14px; line-height:1.5; overflow-x:auto;">
+                                <code>
+// Simple fetch example
+async function getData(url) {
+    try {
+        const res = await fetch(url);
+        const data = await res.json();
+        console.log("Data loaded:", data);
+    } catch (err) {
+    console.error("Error:", err);
+        }
+    }
+
+getData("https://api.example.com/users");
+                                </code>
+                            </pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End product Section -->
+
+        <!-- Start Netflix OverView -->
+        <div class="netflix-overview">
+            <div class="container">
+                <div class="netflix-images d-flex space-between align-center gap-30">
+                    <img src="images/netflix.svg" alt="">
+                    <img src="images/netflix.svg" alt="">
+                    <img src="images/netflix.svg" alt="">
+                    <img src="images/netflix.svg" alt="">
+                    <img src="images/netflix.svg" alt="">
+                    <img src="images/netflix.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- End Netflix OverView -->
+
+        <!-- Start Statistecs -->
+        <div class="statistics-overview">
+            <div class="container">
+                <div class="states d-flex align-center space-between">
+                    <!-- First State -->
+                    <div class="state-card p-relative">
+                        <h2 class="m-0 fs-30">240,000+</h2>
+                        <span class="fs-14">products</span>
+                    </div>
+                    <!-- Second State -->
+                    <div class="state-card p-relative">
+                        <h2 class="m-0 fs-30">10,000+</h2>
+                        <span class="fs-14">businesses and developers</span>
+                    </div>
+                    <!-- Third State -->
+                    <div class="state-card p-relative">
+                        <h2 class="m-0 fs-30">100+</h2>
+                        <span class="fs-14">languages supported</span>
+                    </div>
+                    <!-- Fourth State -->
+                    <div class="state-card p-relative">
+                        <h2 class="m-0 fs-30">10+</h2>
+                        <span class="fs-14">years of experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Statistecs -->
+
+        <!-- Start Key Features -->
+        <div class="key-features">
+            <div class="container">
+                <div class="title">
+                    <div class="box bg-white w-fit fs-14 bg-white p-relative">
+                        <span class="fs-14 pl-15">Key Features</span>
+                    </div>
+                </div>
+                <div class="bottom d-grid gap-30">
+                    <!-- First Card  -->
+                    <div class="card">
+                        <h2 class="m-0">IMEI Lookup</h2>
+                        <p class="fs-14 line-ht-1-5">
+                            Retrieve device specs instantly by entering an IMEI number. Eliminate guesswork with precise model identification
+                        </p>
+                    </div>
+                    <!-- Second Card  -->
+                    <div class="card">
+                        <h2 class="m-0">Device Lookup</h2>
+                        <p class="fs-14 line-ht-1-5">
+                            Retrieve precise device specifications instantly through our API. Perfect for comparison tools, e-commerce platforms, and consumer tech apps
+                        </p>
+                    </div>
+                    <!-- Third Card  -->
+                    <div class="card">
+                        <h2 class="m-0">Multilingual Support</h2>
+                        <p class="fs-14 line-ht-1-5">
+                            TechSpecs provides localized data support in over 100 languages, enabling you to effortlessly create multilingual applications that resonate with users around the world
+                        </p>
+                    </div>
+                    <!-- Fourth Card  -->
+                    <div class="card">
+                        <h2 class="m-0">Product Images</h2>
+                        <p class="fs-14 line-ht-1-5">
+                            Access high-quality product images in multiple colors and formats. Perfect for product pages, mobile apps, and marketing materials
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Key Features -->
+
+        <!-- Start States -->
+        <div class="features">
+            <div class="container">
+                <div class="feature-img p-relative">
+                    <img class="w-full" src="images/feature.svg" alt="">
+                    <div class="feature-state">
+                        <h2 class="m-0 fs-30">Our database already has over</h2>
+                        <h1 class="m-0 fs-70">+240.937</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End States -->
+
+        <!-- Start Search Section -->
+        <div class="search-section">
+            <div class="container">
+                <div class="title">
+                    <div class="box bg-white w-fit fs-14 bg-white p-relative">
+                        <span class="fs-14 pl-15">Search right now</span>
+                    </div>
+                </div>
+                <div class="search mt-30">
+                    <div class="top d-flex bg-white w-fit">
+                        <span class="fs-14">Find by Photo</span>
+                        <span class="fs-14 trans-3s">Check by IMEI</span>
+                        <span class="fs-14 trans-3s">Look up by Model Name</span>
+                    </div>
+                    <div class="bottom p-15 bg-white">
+                        <div class="search-box p-15 p-relative" style="overflow: hidden;">
+                            <div class="p-absolute left-half top-half translate d-flex flex-column gap-20">
+                                <button class="c-white fs-14">Select Image</button>
+                                <h3 class="m-0 fs-20">Or drag it here</h3>
+                                <div class="d-flex gap-10 justify-center align-center">
+                                    <span class="fs-14">ctrl</span>
+                                    <i class="fa-solid fa-plus fs-14"></i>
+                                    <span class="fs-14">V</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Search Section -->
     </body>
 </html>
