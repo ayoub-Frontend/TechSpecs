@@ -100,6 +100,9 @@ ul {
         border-bottom-right-radius: 6px;
         border-bottom-left-radius: 6px;
     }    
+    .header .head .right ul li:not(:nth-of-type(5)) a:hover {
+    color: white;
+}
 }
 /* End Header */
 
