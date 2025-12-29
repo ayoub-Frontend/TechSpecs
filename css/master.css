@@ -205,10 +205,13 @@ ul {
 }
 @media(max-width: 650px) {
     .statistics-overview .states {
-    flex-wrap: wrap;
-    gap: 35px;
-    justify-content: center;
-}
+        gap: 35px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .statistics-overview .states .state-card::before {
+        left: 0;
+    }
 }
 /* End Statestics Overview */
 
@@ -325,6 +328,151 @@ ul {
     box-shadow: 0px 0 57px 44px #A4E3FF80;
 }
 /* End Search Section */
+
+/* Start Setup Section */
+.setup-section {
+    padding: 40px 0;
+}
+.setup-section .setup-menu {
+    padding: 40px 30px;
+}
+.setup-section .setup-menu .setup {
+    justify-content: center;
+}
+.setup-section .setup-menu .setup span {
+    background-color: #F2F2F2;
+    padding: 8px 15px;
+}
+.setup-section .setup-menu .setup h2 {
+    font-weight: 700;
+}
+.setup-section .setup-menu::after,
+.setup-section .setup-menu::before {
+    content: "";
+    position: absolute;
+    width: 115px;
+    height: 1px;
+    background-color: #cecdcd;
+}
+.setup-section .setup-menu::after {
+    right: 25%;
+}
+.setup-section .setup-menu::before {
+    left: 30%;
+}
+.setup-section .sircle::after {
+    content: "";
+    position: absolute;
+    width: 715px;
+    height: 221px;
+    background-color: #03a9f442;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: 0 0 59px 31px #03a9f454;
+}
+@media(max-width: 767px) {
+    .setup-section .setup-menu {
+        flex-direction: column;
+        gap: 35px;
+    }
+    .setup-section .setup-menu::before,
+    .setup-section .setup-menu::after {
+        display: none;
+    }
+    .setup-section .setup-menu .setup {
+        width: 100%;
+    }
+    .setup-section .setup-menu .setup:not(:last-of-type)::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        background-color: #cecdcd;
+        left: 50%;
+        bottom: -16px;
+        width: 100%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    .setup-section .setup-menu .setup h2 {
+        text-align: center;
+    }
+    .setup-section .sircle::after {
+        width: 200px;
+    }
+}
+/* End Setup Section */
+
+/* Start Prices Section */
+.prices-section {
+    padding: 150px 0;
+}
+.prices-section .price-methods .top {
+    gap: 130px;
+}
+.prices-section .price-methods .top .models {
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+}
+.prices-section .price-methods .top .models .model-card {
+    align-items: flex-start;
+}
+.prices-section .price-methods .top .models .model-card:first-of-type input[type="button"] {
+    padding: 10px 30px;
+    border: 1px solid white;
+    color: #E3E3E4;
+}
+.prices-section .price-methods .top .models .model-card:nth-of-type(2) input[type="button"] {
+    padding: 10px 30px;
+    background-image: linear-gradient(45deg, #1976D2, #03A9F4);
+    box-shadow: 0 2px 4px 0px #03A9F4;
+    border: none;
+    cursor: pointer;
+}
+.prices-section .price-methods .top .models .model-card:last-of-type input[type="button"] {
+    padding: 10px 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0px #03A9F4;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #03A6F2, #1877D3) 1;
+    cursor: pointer;
+}
+.prices-section .bottom table thead td i.x-mark {
+    opacity: 0;
+}
+.prices-section .bottom table thead tr:not(:last-of-type) {
+    border-right: 1px solid #f2f2f2;
+}
+@media(max-width: 1000px) {
+    .prices-section .bottom table thead tr {
+        width: 25vh;
+    }
+    .prices-section .bottom table tbody tr {
+        width: 22vh;
+    }
+    .prices-section .bottom table {
+        overflow-x: auto;
+    }
+}
+@media(max-width: 767px) {
+    .prices-section .price-methods .top {
+        flex-direction: column;
+        gap: 35px;
+        height: 201px;
+    }
+    .prices-section .price-methods .top .models {
+        gap: 25px;
+        overflow: auto;
+        padding: 0px 20px;
+    }
+}
+/* End Prices Section */
 
 /* Start Conponents */
 .toggle-switch {
