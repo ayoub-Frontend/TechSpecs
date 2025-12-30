@@ -21,7 +21,7 @@
                     <div class="left d-flex align-center gap-30">
                         <div class="title d-flex align-center">
                             <img class="w-full" src="images/logo.svg" alt="">
-                            <h1 class="m-0 fw-500 fs-20">TECHSPECS</h1>
+                            <h1 class="m-0 fs-20">TECH<span class="fw-500">SPECS</span></h1>
                         </div>
                         <div>
                             <input id="darkmode-toggle" class="toggle-checkbox" type="checkbox">
@@ -51,12 +51,12 @@
         <div class="landing-section">
             <div class="container">
                 <div class="landing"> 
-                    <h2 class="m-0 c-blue fs-90">World's Largest Specifications Database</h2>
+                    <h2 class="m-0 c-blue fs-90 bg-linear c-transparent">World's Largest Specifications Database</h2>
                     <p class="fs-18 line-ht-1-5">
                         TechSpecs API provides the easiest way to get the standardized technical specifications of over 240,000 consumer 
                         electronics products including the latest laptops, smartphones, tablets, desktops, monitors, smart tvs and smartwatches.
                     </p>
-                    <button class="fs-14 c-white">Get your API key today</button>
+                    <button class="fs-14 c-white pt-10 pb-10 pl-20 pr-20 bg-linear box-shadow curser-p border-n">Get your API key today</button>
                 </div>
             </div>
         </div>
@@ -68,19 +68,19 @@
                 <div class="product-info">
                     <div class="top" style="overflow-x: auto;">
                         <ul class="d-flex align-center" style="width: max-content;">
-                            <li class="not bg-white fs-14">Product Lookup</li>
-                            <li class="bg-grey fs-14 trans-3s">IMEI Lookup</li>
-                            <li class="bg-grey fs-14 trans-3s">Product Images</li>
-                            <li class="bg-grey fs-14 trans-3s">Product Images</li>
-                            <li class="bg-grey fs-14 trans-3s">Product Images</li>
-                            <li class="bg-grey fs-14 trans-3s">Product Images</li>
-                            <li class="not fs-14"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                            <li class="not fs-14 c-blue">Copy to clipboard</li>
+                            <li class="not bg-white fs-14 curser-p">Product Lookup</li>
+                            <li class="bg-grey fs-14 trans-3s curser-p">IMEI Lookup</li>
+                            <li class="bg-grey fs-14 trans-3s curser-p">Product Images</li>
+                            <li class="bg-grey fs-14 trans-3s curser-p">Product Images</li>
+                            <li class="bg-grey fs-14 trans-3s curser-p">Product Images</li>
+                            <li class="bg-grey fs-14 trans-3s curser-p">Product Images</li>
+                            <li class="not fs-14 curser-p"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            <li class="not fs-14 c-blue curser-p">Copy to clipboard</li>
                         </ul>
                     </div>
                     <div class="bottom">
                         <p>
-                            <pre style="background: white; color: #5C6D76; padding:16px; font-size:14px; line-height:1.5; overflow-x:auto;">
+                            <pre class="p-relative bg-white p-15 fs-14 line-ht-1-5" style="color: #5C6D76; overflow-x:auto;">
                                 <code>
 // Simple fetch example
 async function getData(url) {
@@ -158,28 +158,28 @@ getData("https://api.example.com/users");
                 <div class="bottom d-grid gap-30">
                     <!-- First Card  -->
                     <div class="card">
-                        <h2 class="m-0">IMEI Lookup</h2>
+                        <h2 class="m-0 bg-linear c-transparent">IMEI Lookup</h2>
                         <p class="fs-14 line-ht-1-5">
                             Retrieve device specs instantly by entering an IMEI number. Eliminate guesswork with precise model identification
                         </p>
                     </div>
                     <!-- Second Card  -->
                     <div class="card">
-                        <h2 class="m-0">Device Lookup</h2>
+                        <h2 class="m-0 bg-linear c-transparent">Device Lookup</h2>
                         <p class="fs-14 line-ht-1-5">
                             Retrieve precise device specifications instantly through our API. Perfect for comparison tools, e-commerce platforms, and consumer tech apps
                         </p>
                     </div>
                     <!-- Third Card  -->
                     <div class="card">
-                        <h2 class="m-0">Multilingual Support</h2>
+                        <h2 class="m-0 bg-linear c-transparent">Multilingual Support</h2>
                         <p class="fs-14 line-ht-1-5">
                             TechSpecs provides localized data support in over 100 languages, enabling you to effortlessly create multilingual applications that resonate with users around the world
                         </p>
                     </div>
                     <!-- Fourth Card  -->
                     <div class="card">
-                        <h2 class="m-0">Product Images</h2>
+                        <h2 class="m-0 bg-linear c-transparent">Product Images</h2>
                         <p class="fs-14 line-ht-1-5">
                             Access high-quality product images in multiple colors and formats. Perfect for product pages, mobile apps, and marketing materials
                         </p>
@@ -194,7 +194,7 @@ getData("https://api.example.com/users");
             <div class="container">
                 <div class="feature-img p-relative">
                     <img class="w-full" src="images/feature.svg" alt="">
-                    <div class="feature-state">
+                    <div class="feature-state p-absolute top-half left-half translate txt-center d-flex flex-column gap-15 c-white">
                         <h2 class="m-0 fs-30">Our database already has over</h2>
                         <h1 class="m-0 fs-70">+240.937</h1>
                     </div>
@@ -213,14 +213,15 @@ getData("https://api.example.com/users");
                 </div>
                 <div class="search mt-30">
                     <div class="top d-flex bg-white w-fit">
-                        <span class="fs-14">Find by Photo</span>
-                        <span class="fs-14 trans-3s">Check by IMEI</span>
-                        <span class="fs-14 trans-3s">Look up by Model Name</span>
+                        <button class="button-click fs-14 p-10 border-n curser-p active">Find by Photo</button>
+                        <button class="button-click fs-14 trans-3s p-10 border-n curser-p">Check by IMEI</button>
+                        <button class="button-click fs-14 trans-3s p-10 border-n curser-p">Look up by Model Name</button>
                     </div>
                     <div class="bottom p-15 bg-white">
-                        <div class="search-box p-15 p-relative" style="overflow: hidden;">
+                        <!-- First Box -->
+                        <div class="content search-box p-15 p-relative w-full active" style="overflow: hidden;">
                             <div class="p-absolute left-half top-half translate d-flex flex-column gap-20">
-                                <button class="c-white fs-14">Select Image</button>
+                                <button class="c-white fs-14 pl-20 pr-20 pt-10 pb-10 bg-linear box-shadow border-n curser-p">Select Image</button>
                                 <h3 class="m-0 fs-20">Or drag it here</h3>
                                 <div class="d-flex gap-10 justify-center align-center">
                                     <span class="fs-14">ctrl</span>
@@ -228,6 +229,18 @@ getData("https://api.example.com/users");
                                     <span class="fs-14">V</span>
                                 </div>
                             </div>
+                        </div>
+                        <!-- Second Box -->
+                        <div class="content p-15 p-relative align-center d-flex flex-column w-fit gap-15">
+                            <h3 class="m-0 fs-18">Enter your IMEI</h3>
+                            <input class="fs-14 w-full border-n" type="text" name="IMEI" placeholder="here">
+                            <button class="fs-14 w-full c-white pl-20 pr-20 pt-10 pb-10 bg-linear box-shadow curser-p border-n">Start search</button>
+                        </div>
+                        <!-- Third Box -->
+                        <div class="content p-15 p-relative align-center d-flex flex-column w-fit gap-15">
+                            <h3 class="m-0 fs-18">Enter your Model Name</h3>
+                            <input class="fs-14 w-full" type="text" name="IMEI" placeholder="here">
+                            <button class="fs-14 w-full c-white pl-20 pr-20 pt-10 pb-10 bg-linear box-shadow curser-p border-n">Start search</button>
                         </div>
                     </div>
                 </div>
@@ -276,21 +289,21 @@ getData("https://api.example.com/users");
                                 <span class="fs-14 pl-15">Our Prices</span>
                             </div>
                         </div>
-                        <div class="models d-flex">
+                        <div class="models d-flex flex-1 space-between w-full">
                             <!-- First Model -->
                             <div class="model-card d-flex flex-column gap-20 w-full">
                                 <h2 class="m-0 c-blue">Free</h2>
-                                <input class="fs-14 bg-white " type="button" readonly value="Start now">
+                                <input class="fs-14 bg-white pt-10 pb-10 pl-30 pr-30" type="button" readonly value="Start now">
                             </div>
                             <!-- Second Model -->
                             <div class="model-card d-flex flex-column gap-20 w-full">
                                 <h2 class="m-0 c-blue">Standart</h2>
-                                <input class="fs-14 c-white" type="button" value="Start now">
+                                <input class="fs-14 c-white bg-linear box-shadow border-n curser-p pt-10 pb-10 pl-30 pr-30" type="button" value="Start now">
                             </div>
                             <!-- Third Model -->
                             <div class="model-card d-flex flex-column gap-20 w-full">
                                 <h2 class="m-0 c-blue">Enterprise</h2>
-                                <input class="fs-14 c-black" type="button" value="Contact us">
+                                <input class="fs-14 c-black pt-10 pb-10 pl-30 pr-30 bg-white box-shadow border curser-p" type="button" value="Contact us">
                             </div>
                         </div>
                     </div>
@@ -380,10 +393,157 @@ getData("https://api.example.com/users");
                                 </tr>
                             </thead>
                         </table>
+
+                        <div class="footer d-flex gap-30 mt-20">
+                            <!-- First Box -->
+                            <div class="box-fot">
+                                <h2 class="m-0 c-blue fs-20">Standart plan Cost Estimator</h2>
+                                <p class="fs-14 line-ht-1-5">
+                                    To estimate the cost of accessing the database on our standard plan, enter the number of API requests you expect to make each month.
+                                </p>
+                            </div>
+                            <!-- Second Box -->
+                            <div class="box-fot">
+                                <h3 class="m-0 fs-14 c-black mb-10">Number of API requests per month</h3>
+                                <form action="">
+                                    <input class="bg-white fs-14" type="number" name="number-API" value="99999">
+                                    <h3 class="m-0 fs-18 c-black mt-10">99999 request/mo</h3>
+                                    <div class="state-line bg-black w-full mt-15 p-relative"></div>
+                                </form>
+                            </div>
+                            <!-- Third box -->
+                            <div class="box-fot">
+                                <h3 class="m-0 fs-14 c-black mb-10">Your Monthly Cost</h3>
+                                <h2 class="m-0 fs-25 c-blue mb-10">$1999.98</h2>
+                                <button class="fs-14 c-white mt-10 pt-10 pb-10 pl-20 pr-20 bg-linear box-shadow border-n curser-p">Start now</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Prices Section -->
+
+        <!-- Start CTA Section -->
+        <div class="cta-section">
+            <div class="container">
+                <div class="cta-api p-relative d-flex align-center gap-15 fs-25 border curser-p">
+                    <h2 class="m-0 c-white">Get your API key today</h2>
+                    <i class="fa-solid fa-arrow-right c-white fs-30"></i>
+                    <div class="images">
+                        <img class="p-absolute" src="images/price-1.svg" alt="">
+                        <img class="p-absolute" src="images/price-2.svg" alt="">
+                        <img class="p-absolute" src="images/price-3.svg" alt="">
+                        <img class="p-absolute" src="images/price-3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End CTA Section -->
+
+        <!-- Start Contact Us Section -->
+        <div class="contact-us">
+            <div class="container">
+                <div class="contacts d-flex">
+                    <div class="left">
+                        <h2 class="m-0 fs-60 bg-linear c-transparent">Contact us</h2>
+                        <p class="fs-20">
+                            Got questions, bug reports, feedback or feature requests? We'd love to hear from you.
+                        </p>
+                    </div>
+                    <div class="right w-full">
+                        <form action="">
+                            <div class="form-input d-flex flex-column">
+                                <label class="fs-14" for="user-email">Enter your email address</label>
+                                <input class="fs-14 email border-n" type="email" name="user-email" id="user-email" placeholder="mymail@gmail.com">
+                            </div>
+                            <div class="form-input d-flex flex-column mt-20">
+                                <label class="fs-14" for="user-message">Enter your message</label>
+                                <textarea class="fs-14 border-n" name="user-message" id="user-message" placeholder="start here"></textarea>
+                            </div>
+                        </form>
+                        <button class="mt-20 fs-14 w-full c-white bg-linear curser-p box-shadow border-n pt-10 pb-10 pl-20 pr-20">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Us Section -->
+
+        <!-- Start Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-info d-flex space-between">
+                    <!-- Here is the Title -->
+                    <div class="left">
+                        <div class="title d-flex align-center">
+                            <img src="images/logo.svg" alt="">
+                            <h1 class="m-0 fs-20">TECH<span class="fw-500">SPECS</span></h1>
+                        </div>
+                        <span class="fs-14">@ TEchSpecs 2025. All rights reserved.</span>
+                    </div>
+                    <!-- Here is the Links -->
+                    <div class="middle d-flex">
+                        <!-- First Links -->
+                        <div class="links d-flex flex-column gap-20">
+                            <h3 class="m-0 fs-18">Discover</h3>
+                            <ul class="d-flex gap-10 flex-column">
+                                <li><a class="fs-14 trans-3s" href="#">Search</a></li>
+                                <li><a class="fs-14 trans-3s" href="#">Compare</a></li>
+                            </ul>
+                        </div>
+                        <!-- Second Links -->
+                        <div class="links d-flex flex-column gap-20">
+                            <h3 class="m-0 fs-18">Company</h3>
+                            <ul class="d-flex gap-10 flex-column">
+                                <li><a class="fs-14 trans-3s" href="#">About Us</a></li>
+                                <li><a class="fs-14 trans-3s" href="#">Contact Us</a></li>
+                                <li><a class="fs-14 trans-3s" href="#">Brand Guidelines</a></li>
+                            </ul>
+                        </div>
+                        <!-- Third Links -->
+                        <div class="links d-flex flex-column gap-20">
+                            <h3 class="m-0 fs-18">Soical</h3>
+                            <ul class="d-flex gap-10 flex-column">
+                                <li><a class="fs-14 trans-3s" href="#">Facebook</a></li>
+                                <li><a class="fs-14 trans-3s" href="#">x</a></li>
+                                <li><a class="fs-14 trans-3s" href="#">Instagram</a></li>
+                                <li><a class="fs-14 trans-3s" href="#">Medium</a></li>
+                                <li><a class="fs-14 trans-3s" href="#">Youtube</a></li>
+                            </ul>
+                        </div>
+                        <!-- Fourth Links -->
+                        <div class="links d-flex flex-column gap-20">
+                            <h3 class="m-0 fs-18">Docs</h3>
+                            <ul class="d-flex gap-10 flex-column">
+                                <li><a class="fs-14 trans-3s" href="#">Product Search</a></li>
+                                <li><a class="fs-14 trans-3s" href="#">Product Detail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Here is the Buttom to Get Started -->
+                    <div class="right">
+                        <button class="fs-14 w-full c-white bg-linear curser-p box-shadow border-n pt-10 pb-10 pl-30 pr-30">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+
+        <!-- Start JavaScript Code -->
+        <script>
+            const tabs = document.querySelectorAll(".button-click");
+            const contents = document.querySelectorAll(".content");
+
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(tab => (tab.classList.remove("active")));
+                    tab.classList.add("active");
+                    
+                    contents.forEach(content => (content.classList.remove("active")));
+                    contents[index].classList.add("active");
+                })
+            })
+        </script>
+        <!-- End JavaScript Code -->
     </body>
 </html>

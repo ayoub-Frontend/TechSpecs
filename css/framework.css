@@ -47,6 +47,9 @@
 .gap-35 {
     gap: 35px;
 }
+.curser-p {
+    cursor: pointer;
+}
 /* End Box */
 
 /* Start Colors */
@@ -59,11 +62,23 @@
 .c-blue {
     color: var(--main-color);
 }
+.c-transparent {
+    color: transparent;
+}
 .bg-white {
     background-color: white;
 }
 .bg-grey {
     background-color: #F3F3F3;
+}
+.bg-black {
+    background-color: black;
+}
+.bg-linear {
+    background-image: linear-gradient(45deg, #1976D2, #03A9F4);
+}
+.box-shadow {
+    box-shadow: 0 2px 4px 0px #03A9F4;
 }
 /* End Colors */
 
@@ -103,6 +118,9 @@
 }
 .fs-70 {
     font-size: 70px;
+}
+.fs-60 {
+    font-size: 60px;
 }
 .fs-90 {
     font-size: 90px;
@@ -158,6 +176,9 @@
 .border {
     border: 1px solid;
 }
+.border-n {
+    border: none;
+}
 .rad-6 {
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -202,6 +223,12 @@
 .mr-10 {
     margin-right: 10px;
 }
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
 .mt-35 {
     margin-top: 35px;
 }
@@ -217,8 +244,14 @@
 .mt-30 {
     margin-top: 30px;
 }
+.mb-10 {
+    margin-bottom: 10px;
+}
 .mb-20 {
     margin-bottom: 20px;
+}
+.p-10 {
+    padding: 10px;
 }
 .p-15 {
     padding: 15px;
@@ -229,10 +262,28 @@
 .p-25 {
     padding: 25px;
 }
+.pt-10 {
+    padding-top: 10px;
+}
+.pr-20 {
+    padding-right: 20px;
+}
+.pr-30 {
+    padding-right: 30px;
+}
 .pl-15 {
     padding-left: 15px;
 }
+.pl-20 {
+    padding-left: 20px;
+}
 .pl-25 {
     padding-left: 25px;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.pb-10 {
+    padding-bottom: 10px;
 }
 /* End Margin And Padding */
